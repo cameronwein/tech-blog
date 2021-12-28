@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="comment-title">Comments</h2>
+  <div class="comments">
+    {{#each this}}
+    <section class="comment">
+      <div class="comment-user">
+          {{user.username}} 
+      </div>
+        <div class="comment-date">
+          {{format_date created_at}}
+        </div>
+      <div class="comment-text">
+        {{comment_text}}
+      </div>
+    </section>
+    {{/each}}
+  </div>
+</div>
