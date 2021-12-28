@@ -12,13 +12,16 @@
   <div class="body-wrapper">
     <header>
         <nav>
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-            {{#if loggedIn}}
-            <button id="logout" class="btn-no-style">Logout</button>
+            <div class="pages">
+              <a href="/">Home</a>
+              <a href="/dashboard">Dashboard</a>
+              {{#if loggedIn}}
+              <button id="logout" class="btn-no-style">Logout</button>
+            </div>
             <p class="username">Logged in as {{username}}</p>
             {{else}}
-            <a href="/login">Login</a>
+              <a href="/login">Login</a>
+            </div>
             {{/if}}
         </nav>
         <h1 class="main-title">The Tech Blog</h1>
